@@ -37,6 +37,11 @@
   m.map = self.mMapView;
 }
 
+- (void)addOverlay:(nonnull id)polyline {
+	GMSPolyline *p = polyline;
+	p.map = self.mMapView;
+}
+
 - (GMSMapView *)mMapView {
   if (_mMapView == nil) {
     _mMapView = [[GMSMapView alloc] init];

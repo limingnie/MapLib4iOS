@@ -11,6 +11,7 @@
 
 #import "XGMSMapView.h"
 #import "XGMSMarker.h"
+#import "XGMSPolyline.h"
 
 @interface XGMSMap ()
 
@@ -38,6 +39,11 @@
                                     LocationY:(double)y
                                      UserData:(nonnull NSDictionary *)userData {
   return [[XGMSMarker alloc] initMarkerViewWithView:view LocationX:x LocationY:y UserData:userData];
+}
+
+- (nonnull id<XPolylineProtocol>)polylineWithCoordinates:(nonnull CLLocationCoordinate2D *)coords
+                                                   Count:(NSUInteger)count {
+  return [[XGMSPolyline alloc] initPolylineWithCoordinates:coords Count:count];
 }
 
 @end

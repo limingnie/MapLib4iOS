@@ -40,6 +40,10 @@
   [self.mMapView addAnnotation:(id<MAAnnotation>)marker];
 }
 
+- (void)addOverlay:(nonnull id)polyline {
+  [self.mMapView addOverlay:(id<MAOverlay>)polyline];
+}
+
 - (MAAnnotationView *)mapView:(MAMapView *)mapView viewForAnnotation:(id<MAAnnotation>)annotation {
   if ([annotation isKindOfClass:[XYZAMPMarker class]]) {
     static NSString *pointReuseIndetifier = @"pointReuseIndetifier";
@@ -56,6 +60,20 @@
     return annotationView;
   }
 
+  return nil;
+}
+
+- (MAOverlayRenderer *)mapView:(MAMapView *)mapView rendererForOverlay:(id<MAOverlay>)overlay {
+  if ([overlay isKindOfClass:[MAPolyline class]]) {
+    MAPolylineRenderer *polylineRenderer = [[MAPolylineRenderer alloc] initWithPolyline:overlay];
+
+    polylineRenderer.lineWidth = 8.f;
+    polylineRenderer.strokeColor = [UIColor colorWithRed:0 green:1 blue:0 alpha:0.6];
+    polylineRenderer.lineJoinType = kMALineJoinRound;
+    polylineRenderer.lineCapType = kMALineCapRound;
+
+    return polylineRenderer;
+  }
   return nil;
 }
 

@@ -11,6 +11,7 @@
 
 #import "XAMPMapView.h"
 #import "XAMPMarker.h"
+#import "XAMPPolyline.h"
 
 @interface XAMPMap ()
 
@@ -38,6 +39,11 @@
                                     LocationY:(double)y
                                      UserData:(nonnull NSDictionary *)userData {
   return [[XAMPMarker alloc] initMarkerViewWithView:view LocationX:x LocationY:y UserData:userData];
+}
+
+- (nonnull id<XPolylineProtocol>)polylineWithCoordinates:(nonnull CLLocationCoordinate2D *)coords
+                                                   Count:(NSUInteger)count {
+  return [[XAMPPolyline alloc] initPolylineWithCoordinates:coords Count:count];
 }
 
 @end

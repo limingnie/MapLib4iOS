@@ -27,6 +27,7 @@ static const double kCameraLongitude = 113.924789;
 
   [self.view addSubview:self.mMapViewProtocol.mapView];
   [self addMarker];
+  [self addOverlay];
 }
 
 - (void)addMarker {
@@ -40,6 +41,18 @@ static const double kCameraLongitude = 113.924789;
                                                                LocationY:kCameraLongitude
                                                                 UserData:userData];
   [self.mMapViewProtocol addMarker:markerProtocol.marker];
+}
+
+- (void)addOverlay {
+	CLLocationCoordinate2D coords[5] = {0};
+	coords[0] = CLLocationCoordinate2DMake(39.968, 116.260);
+	coords[1] = CLLocationCoordinate2DMake(39.912, 116.324);
+	coords[2] = CLLocationCoordinate2DMake(39.968, 116.373);
+	coords[3] = CLLocationCoordinate2DMake(39.912, 116.439);
+	coords[4] = CLLocationCoordinate2DMake(39.968, 116.490);
+
+	id<XPolylineProtocol>polylineProtocol = [self.mMapProtocol polylineWithCoordinates:coords Count:5];
+	[self.mMapViewProtocol addOverlay:polylineProtocol.polyline];
 }
 
 - (id<XMapProtocol>)mMapProtocol {

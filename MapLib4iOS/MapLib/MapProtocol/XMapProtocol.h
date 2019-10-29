@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "XMapViewProtocol.h"
 #import "XMarkerProtocol.h"
+#import "XPolylineProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -37,6 +38,12 @@ NS_ASSUME_NONNULL_BEGIN
                             LocationX:(double)x
                             LocationY:(double)y
                              UserData:(NSDictionary *)userData;
+
+/// polyline
+/// @param coords coords description
+/// @param count count description
+- (id<XPolylineProtocol>)polylineWithCoordinates:(CLLocationCoordinate2D *)coords
+                                           Count:(NSUInteger)count;
 
 @end
 

@@ -11,6 +11,7 @@
 
 #import "XBMKMapView.h"
 #import "XBMKMarker.h"
+#import "XBMKPolyline.h"
 
 @interface XBMKMap () <BMKGeneralDelegate>
 
@@ -40,6 +41,11 @@
                                     LocationY:(double)y
                                      UserData:(nonnull NSDictionary *)userData {
   return [[XBMKMarker alloc] initMarkerViewWithView:view LocationX:x LocationY:y UserData:userData];
+}
+
+- (nonnull id<XPolylineProtocol>)polylineWithCoordinates:(nonnull CLLocationCoordinate2D *)coords
+                                                   Count:(NSUInteger)count {
+  return [[XBMKPolyline alloc] initPolylineWithCoordinates:coords Count:count];
 }
 
 //联网
