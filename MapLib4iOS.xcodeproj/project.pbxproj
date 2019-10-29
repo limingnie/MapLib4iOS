@@ -7,21 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		374C66F5CA1AD481B05D8C63 /* libPods-MapLib4iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4881146650C2E9F1EBB14AE2 /* libPods-MapLib4iOS.a */; };
 		7AC9D3F12366882C00D46A0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC9D3F02366882C00D46A0B /* AppDelegate.m */; };
-		7AC9D3F42366882C00D46A0B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC9D3F32366882C00D46A0B /* SceneDelegate.m */; };
 		7AC9D3F72366882C00D46A0B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC9D3F62366882C00D46A0B /* ViewController.m */; };
 		7AC9D3FA2366882C00D46A0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AC9D3F82366882C00D46A0B /* Main.storyboard */; };
 		7AC9D3FC2366883200D46A0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AC9D3FB2366883200D46A0B /* Assets.xcassets */; };
 		7AC9D3FF2366883200D46A0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AC9D3FD2366883200D46A0B /* LaunchScreen.storyboard */; };
 		7AC9D4022366883200D46A0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC9D4012366883200D46A0B /* main.m */; };
+		7AC9D40B2366978100D46A0B /* XMapLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC9D40A2366978100D46A0B /* XMapLib.m */; };
+		7AC9D42F2366E08B00D46A0B /* XGMSMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC9D42C2366E08B00D46A0B /* XGMSMapView.m */; };
+		7AC9D4302366E08B00D46A0B /* XAMPMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC9D42D2366E08B00D46A0B /* XAMPMapView.m */; };
+		7AC9D4312366E08B00D46A0B /* XBMKMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC9D42E2366E08B00D46A0B /* XBMKMapView.m */; };
+		7AC9D4392366E0A500D46A0B /* XBMKMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC9D4332366E0A500D46A0B /* XBMKMap.m */; };
+		7AC9D43A2366E0A500D46A0B /* XAMPMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC9D4342366E0A500D46A0B /* XAMPMap.m */; };
+		7AC9D43B2366E0A500D46A0B /* XGMSMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC9D4382366E0A500D46A0B /* XGMSMap.m */; };
+		7AC9D43E2366E1D900D46A0B /* XBMKMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC9D43D2366E1D900D46A0B /* XBMKMarker.m */; };
+		7AC9D4412366E21200D46A0B /* XGMSMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC9D4402366E21200D46A0B /* XGMSMarker.m */; };
+		7AC9D4442366E24300D46A0B /* XAMPMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC9D4432366E24300D46A0B /* XAMPMarker.m */; };
+		7AC9D44C2366F0BC00D46A0B /* XYZBMKMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC9D44B2366F0BC00D46A0B /* XYZBMKMarker.m */; };
+		7AC9D44F2366F0FF00D46A0B /* XYZBMKMarkerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC9D44E2366F0FF00D46A0B /* XYZBMKMarkerView.m */; };
+		7AC9D4522367C64A00D46A0B /* XYZAMPMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC9D4512367C64A00D46A0B /* XYZAMPMarker.m */; };
+		7AC9D4552367C82900D46A0B /* XYZAMPMarkerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC9D4542367C82900D46A0B /* XYZAMPMarkerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4881146650C2E9F1EBB14AE2 /* libPods-MapLib4iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapLib4iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AC9D3EC2366882C00D46A0B /* MapLib4iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapLib4iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AC9D3EF2366882C00D46A0B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7AC9D3F02366882C00D46A0B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7AC9D3F22366882C00D46A0B /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		7AC9D3F32366882C00D46A0B /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		7AC9D3F52366882C00D46A0B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		7AC9D3F62366882C00D46A0B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7AC9D3F92366882C00D46A0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,6 +42,40 @@
 		7AC9D3FE2366883200D46A0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AC9D4002366883200D46A0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7AC9D4012366883200D46A0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7AC9D4092366978100D46A0B /* XMapLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMapLib.h; sourceTree = "<group>"; };
+		7AC9D40A2366978100D46A0B /* XMapLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMapLib.m; sourceTree = "<group>"; };
+		7AC9D40C2366986300D46A0B /* XMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMap.h; sourceTree = "<group>"; };
+		7AC9D40E2366B9EC00D46A0B /* XMapProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMapProtocol.h; sourceTree = "<group>"; };
+		7AC9D4172366C1F100D46A0B /* XMapViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMapViewProtocol.h; sourceTree = "<group>"; };
+		7AC9D4262366E01200D46A0B /* XMarkerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMarkerProtocol.h; sourceTree = "<group>"; };
+		7AC9D4292366E08B00D46A0B /* XGMSMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGMSMapView.h; sourceTree = "<group>"; };
+		7AC9D42A2366E08B00D46A0B /* XBMKMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBMKMapView.h; sourceTree = "<group>"; };
+		7AC9D42B2366E08B00D46A0B /* XAMPMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XAMPMapView.h; sourceTree = "<group>"; };
+		7AC9D42C2366E08B00D46A0B /* XGMSMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGMSMapView.m; sourceTree = "<group>"; };
+		7AC9D42D2366E08B00D46A0B /* XAMPMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XAMPMapView.m; sourceTree = "<group>"; };
+		7AC9D42E2366E08B00D46A0B /* XBMKMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBMKMapView.m; sourceTree = "<group>"; };
+		7AC9D4332366E0A500D46A0B /* XBMKMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBMKMap.m; sourceTree = "<group>"; };
+		7AC9D4342366E0A500D46A0B /* XAMPMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XAMPMap.m; sourceTree = "<group>"; };
+		7AC9D4352366E0A500D46A0B /* XGMSMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGMSMap.h; sourceTree = "<group>"; };
+		7AC9D4362366E0A500D46A0B /* XBMKMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBMKMap.h; sourceTree = "<group>"; };
+		7AC9D4372366E0A500D46A0B /* XAMPMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XAMPMap.h; sourceTree = "<group>"; };
+		7AC9D4382366E0A500D46A0B /* XGMSMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGMSMap.m; sourceTree = "<group>"; };
+		7AC9D43C2366E1D900D46A0B /* XBMKMarker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBMKMarker.h; sourceTree = "<group>"; };
+		7AC9D43D2366E1D900D46A0B /* XBMKMarker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XBMKMarker.m; sourceTree = "<group>"; };
+		7AC9D43F2366E21200D46A0B /* XGMSMarker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XGMSMarker.h; sourceTree = "<group>"; };
+		7AC9D4402366E21200D46A0B /* XGMSMarker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGMSMarker.m; sourceTree = "<group>"; };
+		7AC9D4422366E24300D46A0B /* XAMPMarker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XAMPMarker.h; sourceTree = "<group>"; };
+		7AC9D4432366E24300D46A0B /* XAMPMarker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XAMPMarker.m; sourceTree = "<group>"; };
+		7AC9D44A2366F0BC00D46A0B /* XYZBMKMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZBMKMarker.h; sourceTree = "<group>"; };
+		7AC9D44B2366F0BC00D46A0B /* XYZBMKMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZBMKMarker.m; sourceTree = "<group>"; };
+		7AC9D44D2366F0FF00D46A0B /* XYZBMKMarkerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZBMKMarkerView.h; sourceTree = "<group>"; };
+		7AC9D44E2366F0FF00D46A0B /* XYZBMKMarkerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZBMKMarkerView.m; sourceTree = "<group>"; };
+		7AC9D4502367C64A00D46A0B /* XYZAMPMarker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZAMPMarker.h; sourceTree = "<group>"; };
+		7AC9D4512367C64A00D46A0B /* XYZAMPMarker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZAMPMarker.m; sourceTree = "<group>"; };
+		7AC9D4532367C82900D46A0B /* XYZAMPMarkerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZAMPMarkerView.h; sourceTree = "<group>"; };
+		7AC9D4542367C82900D46A0B /* XYZAMPMarkerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZAMPMarkerView.m; sourceTree = "<group>"; };
+		801991A3A06CED7206E6A7C4 /* Pods-MapLib4iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapLib4iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapLib4iOS/Pods-MapLib4iOS.release.xcconfig"; sourceTree = "<group>"; };
+		B9CE329AC0D715D686E9BDE9 /* Pods-MapLib4iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapLib4iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapLib4iOS/Pods-MapLib4iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +83,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				374C66F5CA1AD481B05D8C63 /* libPods-MapLib4iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BF5995D8D30EEF47CDCE3D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4881146650C2E9F1EBB14AE2 /* libPods-MapLib4iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7AC9D3E32366882C00D46A0B = {
 			isa = PBXGroup;
 			children = (
 				7AC9D3EE2366882C00D46A0B /* MapLib4iOS */,
 				7AC9D3ED2366882C00D46A0B /* Products */,
+				CE8CF722C94DC45C41C4C525 /* Pods */,
+				0BF5995D8D30EEF47CDCE3D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,10 +119,9 @@
 		7AC9D3EE2366882C00D46A0B /* MapLib4iOS */ = {
 			isa = PBXGroup;
 			children = (
+				7AC9D4082366972500D46A0B /* MapLib */,
 				7AC9D3EF2366882C00D46A0B /* AppDelegate.h */,
 				7AC9D3F02366882C00D46A0B /* AppDelegate.m */,
-				7AC9D3F22366882C00D46A0B /* SceneDelegate.h */,
-				7AC9D3F32366882C00D46A0B /* SceneDelegate.m */,
 				7AC9D3F52366882C00D46A0B /* ViewController.h */,
 				7AC9D3F62366882C00D46A0B /* ViewController.m */,
 				7AC9D3F82366882C00D46A0B /* Main.storyboard */,
@@ -76,6 +133,110 @@
 			path = MapLib4iOS;
 			sourceTree = "<group>";
 		};
+		7AC9D4082366972500D46A0B /* MapLib */ = {
+			isa = PBXGroup;
+			children = (
+				7AC9D4252366DFD600D46A0B /* MarkerViewProtocol */,
+				7AC9D4162366C1B000D46A0B /* MapViewProtocol */,
+				7AC9D40D2366B99800D46A0B /* MapProtocol */,
+				7AC9D40C2366986300D46A0B /* XMap.h */,
+				7AC9D4092366978100D46A0B /* XMapLib.h */,
+				7AC9D40A2366978100D46A0B /* XMapLib.m */,
+			);
+			path = MapLib;
+			sourceTree = "<group>";
+		};
+		7AC9D40D2366B99800D46A0B /* MapProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				7AC9D4322366E0A500D46A0B /* Map */,
+				7AC9D40E2366B9EC00D46A0B /* XMapProtocol.h */,
+			);
+			path = MapProtocol;
+			sourceTree = "<group>";
+		};
+		7AC9D4162366C1B000D46A0B /* MapViewProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				7AC9D4282366E08B00D46A0B /* MapView */,
+				7AC9D4172366C1F100D46A0B /* XMapViewProtocol.h */,
+			);
+			path = MapViewProtocol;
+			sourceTree = "<group>";
+		};
+		7AC9D4252366DFD600D46A0B /* MarkerViewProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				7AC9D4272366E06900D46A0B /* MarkerView */,
+				7AC9D4262366E01200D46A0B /* XMarkerProtocol.h */,
+			);
+			path = MarkerViewProtocol;
+			sourceTree = "<group>";
+		};
+		7AC9D4272366E06900D46A0B /* MarkerView */ = {
+			isa = PBXGroup;
+			children = (
+				7AC9D4492366F0BC00D46A0B /* Marker&MarkerView */,
+				7AC9D43C2366E1D900D46A0B /* XBMKMarker.h */,
+				7AC9D43D2366E1D900D46A0B /* XBMKMarker.m */,
+				7AC9D43F2366E21200D46A0B /* XGMSMarker.h */,
+				7AC9D4402366E21200D46A0B /* XGMSMarker.m */,
+				7AC9D4422366E24300D46A0B /* XAMPMarker.h */,
+				7AC9D4432366E24300D46A0B /* XAMPMarker.m */,
+			);
+			path = MarkerView;
+			sourceTree = "<group>";
+		};
+		7AC9D4282366E08B00D46A0B /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				7AC9D4292366E08B00D46A0B /* XGMSMapView.h */,
+				7AC9D42C2366E08B00D46A0B /* XGMSMapView.m */,
+				7AC9D42A2366E08B00D46A0B /* XBMKMapView.h */,
+				7AC9D42E2366E08B00D46A0B /* XBMKMapView.m */,
+				7AC9D42B2366E08B00D46A0B /* XAMPMapView.h */,
+				7AC9D42D2366E08B00D46A0B /* XAMPMapView.m */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		7AC9D4322366E0A500D46A0B /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				7AC9D4362366E0A500D46A0B /* XBMKMap.h */,
+				7AC9D4332366E0A500D46A0B /* XBMKMap.m */,
+				7AC9D4372366E0A500D46A0B /* XAMPMap.h */,
+				7AC9D4342366E0A500D46A0B /* XAMPMap.m */,
+				7AC9D4352366E0A500D46A0B /* XGMSMap.h */,
+				7AC9D4382366E0A500D46A0B /* XGMSMap.m */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		7AC9D4492366F0BC00D46A0B /* Marker&MarkerView */ = {
+			isa = PBXGroup;
+			children = (
+				7AC9D44A2366F0BC00D46A0B /* XYZBMKMarker.h */,
+				7AC9D44B2366F0BC00D46A0B /* XYZBMKMarker.m */,
+				7AC9D44D2366F0FF00D46A0B /* XYZBMKMarkerView.h */,
+				7AC9D44E2366F0FF00D46A0B /* XYZBMKMarkerView.m */,
+				7AC9D4502367C64A00D46A0B /* XYZAMPMarker.h */,
+				7AC9D4512367C64A00D46A0B /* XYZAMPMarker.m */,
+				7AC9D4532367C82900D46A0B /* XYZAMPMarkerView.h */,
+				7AC9D4542367C82900D46A0B /* XYZAMPMarkerView.m */,
+			);
+			path = "Marker&MarkerView";
+			sourceTree = "<group>";
+		};
+		CE8CF722C94DC45C41C4C525 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9CE329AC0D715D686E9BDE9 /* Pods-MapLib4iOS.debug.xcconfig */,
+				801991A3A06CED7206E6A7C4 /* Pods-MapLib4iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +244,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7AC9D4052366883200D46A0B /* Build configuration list for PBXNativeTarget "MapLib4iOS" */;
 			buildPhases = (
+				9D1F228B54DACB15A82E0469 /* [CP] Check Pods Manifest.lock */,
 				7AC9D3E82366882C00D46A0B /* Sources */,
 				7AC9D3E92366882C00D46A0B /* Frameworks */,
 				7AC9D3EA2366882C00D46A0B /* Resources */,
+				1E2D8A1503C1403734EBC342 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -141,15 +304,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E2D8A1503C1403734EBC342 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MapLib4iOS/Pods-MapLib4iOS-resources.sh",
+				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
+				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/mapapi.bundle",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mapapi.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapLib4iOS/Pods-MapLib4iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D1F228B54DACB15A82E0469 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MapLib4iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7AC9D3E82366882C00D46A0B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AC9D43E2366E1D900D46A0B /* XBMKMarker.m in Sources */,
+				7AC9D4392366E0A500D46A0B /* XBMKMap.m in Sources */,
+				7AC9D42F2366E08B00D46A0B /* XGMSMapView.m in Sources */,
+				7AC9D4412366E21200D46A0B /* XGMSMarker.m in Sources */,
+				7AC9D4522367C64A00D46A0B /* XYZAMPMarker.m in Sources */,
+				7AC9D44C2366F0BC00D46A0B /* XYZBMKMarker.m in Sources */,
+				7AC9D4302366E08B00D46A0B /* XAMPMapView.m in Sources */,
+				7AC9D4552367C82900D46A0B /* XYZAMPMarkerView.m in Sources */,
+				7AC9D44F2366F0FF00D46A0B /* XYZBMKMarkerView.m in Sources */,
 				7AC9D3F72366882C00D46A0B /* ViewController.m in Sources */,
+				7AC9D40B2366978100D46A0B /* XMapLib.m in Sources */,
 				7AC9D3F12366882C00D46A0B /* AppDelegate.m in Sources */,
+				7AC9D43B2366E0A500D46A0B /* XGMSMap.m in Sources */,
+				7AC9D43A2366E0A500D46A0B /* XAMPMap.m in Sources */,
+				7AC9D4312366E08B00D46A0B /* XBMKMapView.m in Sources */,
+				7AC9D4442366E24300D46A0B /* XAMPMarker.m in Sources */,
 				7AC9D4022366883200D46A0B /* main.m in Sources */,
-				7AC9D3F42366882C00D46A0B /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,35 +514,39 @@
 		};
 		7AC9D4062366883200D46A0B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9CE329AC0D715D686E9BDE9 /* Pods-MapLib4iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7E7TMCQKDR;
 				INFOPLIST_FILE = MapLib4iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xyz.MapLib4iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		7AC9D4072366883200D46A0B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 801991A3A06CED7206E6A7C4 /* Pods-MapLib4iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7E7TMCQKDR;
 				INFOPLIST_FILE = MapLib4iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xyz.MapLib4iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

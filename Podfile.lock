@@ -1,0 +1,32 @@
+PODS:
+  - AMap3DMap (6.6.0):
+    - AMapFoundation (~> 1.5)
+  - AMapFoundation (1.5.6)
+  - BaiduMapKit (4.2.1)
+  - GoogleMaps (3.0.2):
+    - GoogleMaps/Maps (= 3.0.2)
+  - GoogleMaps/Base (3.0.2)
+  - GoogleMaps/Maps (3.0.2):
+    - GoogleMaps/Base
+
+DEPENDENCIES:
+  - AMap3DMap
+  - BaiduMapKit
+  - GoogleMaps
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AMap3DMap
+    - AMapFoundation
+    - BaiduMapKit
+    - GoogleMaps
+
+SPEC CHECKSUMS:
+  AMap3DMap: 37425c7d47420cbfaee88328be3dc3781814b999
+  AMapFoundation: 20fce2a12cd152e1092afdd04379cdac21932185
+  BaiduMapKit: b7430823de488bb6d082e4e1d356dadf09d3edb2
+  GoogleMaps: 941cd655e009b4d8e42df19a3d749bc3fccec973
+
+PODFILE CHECKSUM: b98d7d54a217f07c947b963b12e5da442b703389
+
+COCOAPODS: 1.5.3
