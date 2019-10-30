@@ -12,6 +12,8 @@
 #import "XYZBMKMarker.h"
 #import "XYZBMKMarkerView.h"
 
+#import "XYZBMKPolyline.h"
+
 @interface XBMKMapView () <BMKMapViewDelegate>
 @property(nonatomic, strong) BMKMapView *mMapView;
 @end
@@ -21,13 +23,12 @@
 #pragma mark - XMapViewProtocol
 
 - (nonnull instancetype)initMapViewWithFrame:(CGRect)frame
-                                   LocationX:(double)x
-                                   LocationY:(double)y
+								  Coordinate:(CLLocationCoordinate2D)coord
                                    ZoomLevel:(float)level {
   self = [super init];
   if (self) {
     self.mMapView.frame = frame;
-    self.mMapView.centerCoordinate = CLLocationCoordinate2DMake(x, y);
+    self.mMapView.centerCoordinate = coord;
     self.mMapView.zoomLevel = level;
     self.mMapView.userTrackingMode = BMKUserTrackingModeHeading;
   }
@@ -67,19 +68,11 @@
 }
 
 - (BMKOverlayView *)mapView:(BMKMapView *)mapView viewForOverlay:(id<BMKOverlay>)overlay {
-  if ([overlay isKindOfClass:[BMKPolyline class]]) {
+  if ([overlay isKindOfClass:[XYZBMKPolyline class]]) {
     BMKPolylineView *polylineView = [[BMKPolylineView alloc] initWithPolyline:overlay];
-    //设置polylineView的画笔颜色为蓝色
-    polylineView.strokeColor = [[UIColor alloc] initWithRed:19 / 255.0
-                                                      green:107 / 255.0
-                                                       blue:251 / 255.0
-                                                      alpha:1.0];
-    //设置polylineView的画笔宽度为16
-    polylineView.lineWidth = 3;
-    //圆点虚线，V5.0.0新增
-    //        polylineView.lineDashType = kBMKLineDashTypeDot;
-    //方块虚线，V5.0.0新增
-    //       polylineView.lineDashType = kBMKLineDashTypeSquare;
+    XYZBMKPolyline *p = overlay;
+    polylineView.strokeColor = p.strokeColor;
+    polylineView.lineWidth = p.strokeWidth;
     return polylineView;
   }
   return nil;

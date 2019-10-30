@@ -21,29 +21,29 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// mapView
 /// @param frame frame description
-/// @param x x description
-/// @param y y description
+/// @param coord x description
 /// @param level level description
 - (id<XMapViewProtocol>)mapViewWithFrame:(CGRect)frame
-                               LocationX:(double)x
-                               LocationY:(double)y
+							  Coordinate:(CLLocationCoordinate2D)coord
                                ZoomLevel:(float)level;
 
 /// marker
 /// @param view view description
-/// @param x x description
-/// @param y y description
+/// @param coord x description
 /// @param userData userData description
 - (id<XMarkerProtocol>)markerWithView:(UIView *)view
-                            LocationX:(double)x
-                            LocationY:(double)y
+						   Coordinate:(CLLocationCoordinate2D)coord
                              UserData:(NSDictionary *)userData;
 
 /// polyline
 /// @param coords coords description
 /// @param count count description
+/// @param strokeColor strokeColor description
+/// @param strokeWidth strokeWidth description
 - (id<XPolylineProtocol>)polylineWithCoordinates:(CLLocationCoordinate2D *)coords
-                                           Count:(NSUInteger)count;
+                                           Count:(NSUInteger)count
+									 StrokeColor:(UIColor *)strokeColor
+									 StrokeWidth:(CGFloat)strokeWidth;
 
 @end
 

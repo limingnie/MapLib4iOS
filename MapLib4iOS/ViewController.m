@@ -36,23 +36,27 @@ static const double kCameraLongitude = 113.924789;
   view.frame = CGRectMake(0, 0, 40, 40);
   NSDictionary *userData = @{};
 
-  id<XMarkerProtocol> markerProtocol = [self.mMapProtocol markerWithView:view
-                                                               LocationX:kCameraLatitude
-                                                               LocationY:kCameraLongitude
-                                                                UserData:userData];
+  id<XMarkerProtocol> markerProtocol = [self.mMapProtocol
+      markerWithView:view
+          Coordinate:CLLocationCoordinate2DMake(kCameraLatitude, kCameraLongitude)
+            UserData:userData];
   [self.mMapViewProtocol addMarker:markerProtocol.marker];
 }
 
 - (void)addOverlay {
-	CLLocationCoordinate2D coords[5] = {0};
-	coords[0] = CLLocationCoordinate2DMake(39.968, 116.260);
-	coords[1] = CLLocationCoordinate2DMake(39.912, 116.324);
-	coords[2] = CLLocationCoordinate2DMake(39.968, 116.373);
-	coords[3] = CLLocationCoordinate2DMake(39.912, 116.439);
-	coords[4] = CLLocationCoordinate2DMake(39.968, 116.490);
+  CLLocationCoordinate2D coords[5] = {0};
+  coords[0] = CLLocationCoordinate2DMake(39.968, 116.260);
+  coords[1] = CLLocationCoordinate2DMake(39.912, 116.324);
+  coords[2] = CLLocationCoordinate2DMake(39.968, 116.373);
+  coords[3] = CLLocationCoordinate2DMake(39.912, 116.439);
+  coords[4] = CLLocationCoordinate2DMake(39.968, 116.490);
 
-	id<XPolylineProtocol>polylineProtocol = [self.mMapProtocol polylineWithCoordinates:coords Count:5];
-	[self.mMapViewProtocol addOverlay:polylineProtocol.polyline];
+  id<XPolylineProtocol> polylineProtocol =
+      [self.mMapProtocol polylineWithCoordinates:coords
+                                           Count:5
+                                     StrokeColor:[UIColor blueColor]
+                                     StrokeWidth:3.0f];
+  [self.mMapViewProtocol addOverlay:polylineProtocol.polyline];
 }
 
 - (id<XMapProtocol>)mMapProtocol {
@@ -64,10 +68,10 @@ static const double kCameraLongitude = 113.924789;
 
 - (id<XMapViewProtocol>)mMapViewProtocol {
   if (_mMapViewProtocol == nil) {
-    _mMapViewProtocol = [self.mMapProtocol mapViewWithFrame:self.view.bounds
-                                                  LocationX:kCameraLatitude
-                                                  LocationY:kCameraLongitude
-                                                  ZoomLevel:15.0f];
+    _mMapViewProtocol = [self.mMapProtocol
+        mapViewWithFrame:self.view.bounds
+              Coordinate:CLLocationCoordinate2DMake(kCameraLatitude, kCameraLongitude)
+               ZoomLevel:15.0f];
   }
   return _mMapViewProtocol;
 }

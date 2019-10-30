@@ -8,18 +8,23 @@
 
 #import <MAMapKit/MAMapKit.h>
 #import "XAMPPolyline.h"
+#import "XYZAMPPolyline.h"
 
 @interface XAMPPolyline ()
-@property(nonatomic, strong) MAPolyline *mPolyline;
+@property(nonatomic, strong) XYZAMPPolyline *mPolyline;
 @end
 
 @implementation XAMPPolyline
 
 - (nonnull instancetype)initPolylineWithCoordinates:(nonnull CLLocationCoordinate2D *)coords
-                                              Count:(NSUInteger)count {
+                                              Count:(NSUInteger)count
+                                        StrokeColor:(nonnull UIColor *)strokeColor
+                                        StrokeWidth:(CGFloat)strokeWidth {
   self = [super init];
   if (self) {
     [self.mPolyline setPolylineWithCoordinates:coords count:count];
+    self.mPolyline.strokeColor = strokeColor;
+    self.mPolyline.strokeWidth = strokeWidth;
   }
   return self;
 }
@@ -28,9 +33,9 @@
   return self.mPolyline;
 }
 
-- (MAPolyline *)mPolyline {
+- (XYZAMPPolyline *)mPolyline {
   if (_mPolyline == nil) {
-    _mPolyline = [[MAPolyline alloc] init];
+    _mPolyline = [[XYZAMPPolyline alloc] init];
   }
   return _mPolyline;
 }

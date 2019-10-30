@@ -30,22 +30,25 @@
 }
 
 - (nonnull id<XMapViewProtocol>)mapViewWithFrame:(CGRect)frame
-                                       LocationX:(double)x
-                                       LocationY:(double)y
+									  Coordinate:(CLLocationCoordinate2D)coord
                                        ZoomLevel:(float)level {
-  return [[XBMKMapView alloc] initMapViewWithFrame:frame LocationX:x LocationY:y ZoomLevel:level];
+  return [[XBMKMapView alloc] initMapViewWithFrame:frame Coordinate:coord ZoomLevel:level];
 }
 
 - (nonnull id<XMarkerProtocol>)markerWithView:(nonnull UIView *)view
-                                    LocationX:(double)x
-                                    LocationY:(double)y
+								   Coordinate:(CLLocationCoordinate2D)coord
                                      UserData:(nonnull NSDictionary *)userData {
-  return [[XBMKMarker alloc] initMarkerViewWithView:view LocationX:x LocationY:y UserData:userData];
+  return [[XBMKMarker alloc] initMarkerViewWithView:view Coordinate:coord UserData:userData];
 }
 
 - (nonnull id<XPolylineProtocol>)polylineWithCoordinates:(nonnull CLLocationCoordinate2D *)coords
-                                                   Count:(NSUInteger)count {
-  return [[XBMKPolyline alloc] initPolylineWithCoordinates:coords Count:count];
+                                                   Count:(NSUInteger)count
+                                             StrokeColor:(UIColor *)strokeColor
+                                             StrokeWidth:(CGFloat)strokeWidth {
+  return [[XBMKPolyline alloc] initPolylineWithCoordinates:coords
+                                                     Count:count
+                                               StrokeColor:strokeColor
+                                               StrokeWidth:strokeWidth];
 }
 
 //联网

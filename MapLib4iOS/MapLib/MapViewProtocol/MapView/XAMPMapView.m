@@ -13,6 +13,8 @@
 #import "XYZAMPMarker.h"
 #import "XYZAMPMarkerView.h"
 
+#import "XYZAMPPolyline.h"
+
 @interface XAMPMapView () <MAMapViewDelegate>
 @property(nonatomic, strong) MAMapView *mMapView;
 @end
@@ -20,13 +22,12 @@
 @implementation XAMPMapView
 
 - (nonnull instancetype)initMapViewWithFrame:(CGRect)frame
-                                   LocationX:(double)x
-                                   LocationY:(double)y
+								  Coordinate:(CLLocationCoordinate2D)coord
                                    ZoomLevel:(float)level {
   self = [super init];
   if (self) {
     self.mMapView.frame = frame;
-    self.mMapView.centerCoordinate = CLLocationCoordinate2DMake(x, y);
+    self.mMapView.centerCoordinate = coord;
     self.mMapView.zoomLevel = level;
   }
   return self;
@@ -64,11 +65,11 @@
 }
 
 - (MAOverlayRenderer *)mapView:(MAMapView *)mapView rendererForOverlay:(id<MAOverlay>)overlay {
-  if ([overlay isKindOfClass:[MAPolyline class]]) {
+  if ([overlay isKindOfClass:[XYZAMPPolyline class]]) {
     MAPolylineRenderer *polylineRenderer = [[MAPolylineRenderer alloc] initWithPolyline:overlay];
-
-    polylineRenderer.lineWidth = 8.f;
-    polylineRenderer.strokeColor = [UIColor colorWithRed:0 green:1 blue:0 alpha:0.6];
+	XYZAMPPolyline *p = overlay;
+    polylineRenderer.lineWidth = p.strokeWidth;
+    polylineRenderer.strokeColor = p.strokeColor;
     polylineRenderer.lineJoinType = kMALineJoinRound;
     polylineRenderer.lineCapType = kMALineCapRound;
 

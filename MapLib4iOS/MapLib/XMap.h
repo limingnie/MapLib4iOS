@@ -15,4 +15,8 @@ typedef NS_ENUM(NSInteger, XMapType) {
 	XMapTypeAMP
 };
 
+static NSString * const BMKMapKey = @"63wkYfYr5tIg6kT8ZFCeoMg9IKCrhHig";
+static NSString * const GMSMapKey = @"AIzaSyDsOSqIIXCsoWhISlCtQOJfN1-jZlnOzrQ";
+static NSString * const AMPMapKey = @"17fc227fa786c8a90c42f3b0ec469598";
+
 #endif /* XMap_h */

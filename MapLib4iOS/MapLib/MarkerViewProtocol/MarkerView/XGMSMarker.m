@@ -16,12 +16,11 @@
 @implementation XGMSMarker
 
 - (nonnull instancetype)initMarkerViewWithView:(id)view
-                                     LocationX:(double)x
-                                     LocationY:(double)y
+									Coordinate:(CLLocationCoordinate2D)coord
                                       UserData:(nonnull NSDictionary *)userData {
   self = [super init];
   if (self) {
-    self.mMarker.position = CLLocationCoordinate2DMake(x, y);
+    self.mMarker.position = coord;
     self.mMarker.iconView = view;
     self.mMarker.userData = userData;
     self.mMarker.groundAnchor = CGPointMake(0.5, 0.5);

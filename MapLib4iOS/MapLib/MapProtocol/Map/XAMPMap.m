@@ -28,22 +28,25 @@
 }
 
 - (nonnull id<XMapViewProtocol>)mapViewWithFrame:(CGRect)frame
-                                       LocationX:(double)x
-                                       LocationY:(double)y
+                                      Coordinate:(CLLocationCoordinate2D)coord
                                        ZoomLevel:(float)level {
-  return [[XAMPMapView alloc] initMapViewWithFrame:frame LocationX:x LocationY:y ZoomLevel:level];
+  return [[XAMPMapView alloc] initMapViewWithFrame:frame Coordinate:coord ZoomLevel:level];
 }
 
 - (nonnull id<XMarkerProtocol>)markerWithView:(nonnull UIView *)view
-                                    LocationX:(double)x
-                                    LocationY:(double)y
+								   Coordinate:(CLLocationCoordinate2D)coord
                                      UserData:(nonnull NSDictionary *)userData {
-  return [[XAMPMarker alloc] initMarkerViewWithView:view LocationX:x LocationY:y UserData:userData];
+  return [[XAMPMarker alloc] initMarkerViewWithView:view Coordinate:coord UserData:userData];
 }
 
 - (nonnull id<XPolylineProtocol>)polylineWithCoordinates:(nonnull CLLocationCoordinate2D *)coords
-                                                   Count:(NSUInteger)count {
-  return [[XAMPPolyline alloc] initPolylineWithCoordinates:coords Count:count];
+                                                   Count:(NSUInteger)count
+                                             StrokeColor:(UIColor *)strokeColor
+                                             StrokeWidth:(CGFloat)strokeWidth {
+  return [[XAMPPolyline alloc] initPolylineWithCoordinates:coords
+                                                     Count:count
+                                               StrokeColor:strokeColor
+                                               StrokeWidth:strokeWidth];
 }
 
 @end

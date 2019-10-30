@@ -16,13 +16,12 @@
 @implementation XGMSMapView
 
 - (nonnull instancetype)initMapViewWithFrame:(CGRect)frame
-                                   LocationX:(double)x
-                                   LocationY:(double)y
+								  Coordinate:(CLLocationCoordinate2D)coord
                                    ZoomLevel:(float)level {
   self = [super init];
   if (self) {
     self.mMapView.frame = frame;
-    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:x longitude:y zoom:level];
+    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:coord.latitude longitude:coord.longitude zoom:level];
     self.mMapView.camera = camera;
   }
   return self;

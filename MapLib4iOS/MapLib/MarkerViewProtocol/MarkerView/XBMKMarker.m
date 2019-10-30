@@ -16,12 +16,11 @@
 @implementation XBMKMarker
 
 - (nonnull instancetype)initMarkerViewWithView:(id)view
-                                     LocationX:(double)x
-                                     LocationY:(double)y
+									Coordinate:(CLLocationCoordinate2D)coord
                                       UserData:(nonnull NSDictionary *)userData {
   self = [super init];
   if (self) {
-    self.mMarker.coordinate = CLLocationCoordinate2DMake(x, y);
+    self.mMarker.coordinate = coord;
     self.mMarker.userData = userData;
     self.mMarker.markerView = view;
   }

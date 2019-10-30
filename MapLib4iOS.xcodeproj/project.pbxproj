@@ -31,6 +31,8 @@
 		7AC9D45C236831D900D46A0B /* XBMKPolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC9D45B236831D900D46A0B /* XBMKPolyline.m */; };
 		7AC9D45F23683C6600D46A0B /* XGMSPolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC9D45E23683C6600D46A0B /* XGMSPolyline.m */; };
 		7AC9D46223683C8000D46A0B /* XAMPPolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC9D46123683C8000D46A0B /* XAMPPolyline.m */; };
+		7AF6D79B23698BB60056FFF4 /* XYZBMKPolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6D79A23698BB60056FFF4 /* XYZBMKPolyline.m */; };
+		7AF6D79E23698D8D0056FFF4 /* XYZAMPPolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6D79D23698D8D0056FFF4 /* XYZAMPPolyline.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +86,10 @@
 		7AC9D45E23683C6600D46A0B /* XGMSPolyline.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGMSPolyline.m; sourceTree = "<group>"; };
 		7AC9D46023683C8000D46A0B /* XAMPPolyline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XAMPPolyline.h; sourceTree = "<group>"; };
 		7AC9D46123683C8000D46A0B /* XAMPPolyline.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XAMPPolyline.m; sourceTree = "<group>"; };
+		7AF6D79923698BB60056FFF4 /* XYZBMKPolyline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZBMKPolyline.h; sourceTree = "<group>"; };
+		7AF6D79A23698BB60056FFF4 /* XYZBMKPolyline.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZBMKPolyline.m; sourceTree = "<group>"; };
+		7AF6D79C23698D8D0056FFF4 /* XYZAMPPolyline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZAMPPolyline.h; sourceTree = "<group>"; };
+		7AF6D79D23698D8D0056FFF4 /* XYZAMPPolyline.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZAMPPolyline.m; sourceTree = "<group>"; };
 		801991A3A06CED7206E6A7C4 /* Pods-MapLib4iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapLib4iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapLib4iOS/Pods-MapLib4iOS.release.xcconfig"; sourceTree = "<group>"; };
 		B9CE329AC0D715D686E9BDE9 /* Pods-MapLib4iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapLib4iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapLib4iOS/Pods-MapLib4iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -251,6 +257,7 @@
 		7AC9D459236831A500D46A0B /* Polyline */ = {
 			isa = PBXGroup;
 			children = (
+				7AF6D79823698AD00056FFF4 /* CustomPolyline */,
 				7AC9D45A236831D900D46A0B /* XBMKPolyline.h */,
 				7AC9D45B236831D900D46A0B /* XBMKPolyline.m */,
 				7AC9D45D23683C6600D46A0B /* XGMSPolyline.h */,
@@ -259,6 +266,17 @@
 				7AC9D46123683C8000D46A0B /* XAMPPolyline.m */,
 			);
 			path = Polyline;
+			sourceTree = "<group>";
+		};
+		7AF6D79823698AD00056FFF4 /* CustomPolyline */ = {
+			isa = PBXGroup;
+			children = (
+				7AF6D79923698BB60056FFF4 /* XYZBMKPolyline.h */,
+				7AF6D79A23698BB60056FFF4 /* XYZBMKPolyline.m */,
+				7AF6D79C23698D8D0056FFF4 /* XYZAMPPolyline.h */,
+				7AF6D79D23698D8D0056FFF4 /* XYZAMPPolyline.m */,
+			);
+			path = CustomPolyline;
 			sourceTree = "<group>";
 		};
 		CE8CF722C94DC45C41C4C525 /* Pods */ = {
@@ -393,6 +411,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AF6D79B23698BB60056FFF4 /* XYZBMKPolyline.m in Sources */,
 				7AC9D43E2366E1D900D46A0B /* XBMKMarker.m in Sources */,
 				7AC9D4392366E0A500D46A0B /* XBMKMap.m in Sources */,
 				7AC9D42F2366E08B00D46A0B /* XGMSMapView.m in Sources */,
@@ -400,6 +419,7 @@
 				7AC9D4522367C64A00D46A0B /* XYZAMPMarker.m in Sources */,
 				7AC9D44C2366F0BC00D46A0B /* XYZBMKMarker.m in Sources */,
 				7AC9D4302366E08B00D46A0B /* XAMPMapView.m in Sources */,
+				7AF6D79E23698D8D0056FFF4 /* XYZAMPPolyline.m in Sources */,
 				7AC9D4552367C82900D46A0B /* XYZAMPMarkerView.m in Sources */,
 				7AC9D44F2366F0FF00D46A0B /* XYZBMKMarkerView.m in Sources */,
 				7AC9D45F23683C6600D46A0B /* XGMSPolyline.m in Sources */,

@@ -7,14 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol XMarkerProtocol <NSObject>
 
 - (instancetype)initMarkerViewWithView:(UIView *)view
-                             LocationX:(double)x
-                             LocationY:(double)y
+							Coordinate:(CLLocationCoordinate2D)coord
                               UserData:(NSDictionary *)userData;
 - (id)marker;
 

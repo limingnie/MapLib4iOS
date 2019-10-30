@@ -14,7 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol XPolylineProtocol <NSObject>
 
 - (instancetype)initPolylineWithCoordinates:(CLLocationCoordinate2D *)coords
-                                      Count:(NSUInteger)count;
+                                      Count:(NSUInteger)count
+								StrokeColor:(UIColor *)strokeColor
+								StrokeWidth:(CGFloat)strokeWidth;
 - (id)polyline;
 
 @end

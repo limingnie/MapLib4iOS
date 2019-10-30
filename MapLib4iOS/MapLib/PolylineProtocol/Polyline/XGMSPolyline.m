@@ -16,7 +16,9 @@
 @implementation XGMSPolyline
 
 - (nonnull instancetype)initPolylineWithCoordinates:(nonnull CLLocationCoordinate2D *)coords
-                                              Count:(NSUInteger)count {
+                                              Count:(NSUInteger)count
+										StrokeColor:(nonnull UIColor *)strokeColor
+										StrokeWidth:(CGFloat)strokeWidth {
   self = [super init];
   if (self) {
     GMSMutablePath *path = [[GMSMutablePath alloc] init];
@@ -25,8 +27,8 @@
     }
 
     self.mPolyline.path = path;
-    self.mPolyline.strokeColor = [UIColor blueColor];
-    self.mPolyline.strokeWidth = 3;
+    self.mPolyline.strokeColor = strokeColor;
+    self.mPolyline.strokeWidth = strokeWidth;
     self.mPolyline.geodesic = YES;
   }
   return self;

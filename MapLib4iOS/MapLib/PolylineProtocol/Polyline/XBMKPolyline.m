@@ -8,18 +8,23 @@
 
 #import <BaiduMapAPI_Map/BMKMapComponent.h>
 #import "XBMKPolyline.h"
+#import "XYZBMKPolyline.h"
 
 @interface XBMKPolyline ()
-@property(nonatomic, strong) BMKPolyline *mPolyline;
+@property(nonatomic, strong) XYZBMKPolyline *mPolyline;
 @end
 
 @implementation XBMKPolyline
 
 - (nonnull instancetype)initPolylineWithCoordinates:(nonnull CLLocationCoordinate2D *)coords
-                                              Count:(NSUInteger)count {
+                                              Count:(NSUInteger)count
+                                        StrokeColor:(nonnull UIColor *)strokeColor
+                                        StrokeWidth:(CGFloat)strokeWidth {
   self = [super init];
   if (self) {
     [self.mPolyline setPolylineWithCoordinates:coords count:count];
+    self.mPolyline.strokeColor = strokeColor;
+    self.mPolyline.strokeWidth = strokeWidth;
   }
   return self;
 }
@@ -28,9 +33,9 @@
   return self.mPolyline;
 }
 
-- (BMKPolyline *)mPolyline {
+- (XYZBMKPolyline *)mPolyline {
   if (_mPolyline == nil) {
-    _mPolyline = [[BMKPolyline alloc] init];
+    _mPolyline = [[XYZBMKPolyline alloc] init];
   }
   return _mPolyline;
 }

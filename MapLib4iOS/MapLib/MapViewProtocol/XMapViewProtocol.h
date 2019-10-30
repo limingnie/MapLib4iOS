@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -14,12 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// initMapView
 /// @param frame frame description
-/// @param x x description
-/// @param y y description
+/// @param coord x description
 /// @param level level description
 - (instancetype)initMapViewWithFrame:(CGRect)frame
-                           LocationX:(double)x
-                           LocationY:(double)y
+						  Coordinate:(CLLocationCoordinate2D)coord
                            ZoomLevel:(float)level;
 
 /// mapView
