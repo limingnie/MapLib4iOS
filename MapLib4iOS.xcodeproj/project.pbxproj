@@ -33,6 +33,10 @@
 		7AC9D46223683C8000D46A0B /* XAMPPolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC9D46123683C8000D46A0B /* XAMPPolyline.m */; };
 		7AF6D79B23698BB60056FFF4 /* XYZBMKPolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6D79A23698BB60056FFF4 /* XYZBMKPolyline.m */; };
 		7AF6D79E23698D8D0056FFF4 /* XYZAMPPolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6D79D23698D8D0056FFF4 /* XYZAMPPolyline.m */; };
+		7AF6D7A4236A6A890056FFF4 /* XBMKPanoramaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6D7A3236A6A890056FFF4 /* XBMKPanoramaView.m */; };
+		7AF6D7A7236A6AA90056FFF4 /* XGMSPanoramaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6D7A6236A6AA90056FFF4 /* XGMSPanoramaView.m */; };
+		7AF6D7AA236A6AC10056FFF4 /* XAMPPanoramaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6D7A9236A6AC10056FFF4 /* XAMPPanoramaView.m */; };
+		7AF6D7AD236A76D70056FFF4 /* BaiduPanoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AF6D7AC236A76D70056FFF4 /* BaiduPanoSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +94,14 @@
 		7AF6D79A23698BB60056FFF4 /* XYZBMKPolyline.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZBMKPolyline.m; sourceTree = "<group>"; };
 		7AF6D79C23698D8D0056FFF4 /* XYZAMPPolyline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZAMPPolyline.h; sourceTree = "<group>"; };
 		7AF6D79D23698D8D0056FFF4 /* XYZAMPPolyline.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZAMPPolyline.m; sourceTree = "<group>"; };
+		7AF6D7A0236A680D0056FFF4 /* XPanoramaViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPanoramaViewProtocol.h; sourceTree = "<group>"; };
+		7AF6D7A2236A6A890056FFF4 /* XBMKPanoramaView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBMKPanoramaView.h; sourceTree = "<group>"; };
+		7AF6D7A3236A6A890056FFF4 /* XBMKPanoramaView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XBMKPanoramaView.m; sourceTree = "<group>"; };
+		7AF6D7A5236A6AA90056FFF4 /* XGMSPanoramaView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XGMSPanoramaView.h; sourceTree = "<group>"; };
+		7AF6D7A6236A6AA90056FFF4 /* XGMSPanoramaView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGMSPanoramaView.m; sourceTree = "<group>"; };
+		7AF6D7A8236A6AC10056FFF4 /* XAMPPanoramaView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XAMPPanoramaView.h; sourceTree = "<group>"; };
+		7AF6D7A9236A6AC10056FFF4 /* XAMPPanoramaView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XAMPPanoramaView.m; sourceTree = "<group>"; };
+		7AF6D7AC236A76D70056FFF4 /* BaiduPanoSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduPanoSDK.framework; sourceTree = "<group>"; };
 		801991A3A06CED7206E6A7C4 /* Pods-MapLib4iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapLib4iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapLib4iOS/Pods-MapLib4iOS.release.xcconfig"; sourceTree = "<group>"; };
 		B9CE329AC0D715D686E9BDE9 /* Pods-MapLib4iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapLib4iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapLib4iOS/Pods-MapLib4iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +112,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				374C66F5CA1AD481B05D8C63 /* libPods-MapLib4iOS.a in Frameworks */,
+				7AF6D7AD236A76D70056FFF4 /* BaiduPanoSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +165,7 @@
 		7AC9D4082366972500D46A0B /* MapLib */ = {
 			isa = PBXGroup;
 			children = (
+				7AF6D79F236A67D90056FFF4 /* PanoramaViewProtocol */,
 				7AC9D4572368313100D46A0B /* PolylineProtocol */,
 				7AC9D4252366DFD600D46A0B /* MarkerViewProtocol */,
 				7AC9D4162366C1B000D46A0B /* MapViewProtocol */,
@@ -277,6 +291,37 @@
 				7AF6D79D23698D8D0056FFF4 /* XYZAMPPolyline.m */,
 			);
 			path = CustomPolyline;
+			sourceTree = "<group>";
+		};
+		7AF6D79F236A67D90056FFF4 /* PanoramaViewProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				7AF6D7AB236A76C10056FFF4 /* Frameworks */,
+				7AF6D7A1236A686E0056FFF4 /* PanoramaView */,
+				7AF6D7A0236A680D0056FFF4 /* XPanoramaViewProtocol.h */,
+			);
+			path = PanoramaViewProtocol;
+			sourceTree = "<group>";
+		};
+		7AF6D7A1236A686E0056FFF4 /* PanoramaView */ = {
+			isa = PBXGroup;
+			children = (
+				7AF6D7A2236A6A890056FFF4 /* XBMKPanoramaView.h */,
+				7AF6D7A3236A6A890056FFF4 /* XBMKPanoramaView.m */,
+				7AF6D7A5236A6AA90056FFF4 /* XGMSPanoramaView.h */,
+				7AF6D7A6236A6AA90056FFF4 /* XGMSPanoramaView.m */,
+				7AF6D7A8236A6AC10056FFF4 /* XAMPPanoramaView.h */,
+				7AF6D7A9236A6AC10056FFF4 /* XAMPPanoramaView.m */,
+			);
+			path = PanoramaView;
+			sourceTree = "<group>";
+		};
+		7AF6D7AB236A76C10056FFF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AF6D7AC236A76D70056FFF4 /* BaiduPanoSDK.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 		CE8CF722C94DC45C41C4C525 /* Pods */ = {
@@ -413,6 +458,7 @@
 			files = (
 				7AF6D79B23698BB60056FFF4 /* XYZBMKPolyline.m in Sources */,
 				7AC9D43E2366E1D900D46A0B /* XBMKMarker.m in Sources */,
+				7AF6D7AA236A6AC10056FFF4 /* XAMPPanoramaView.m in Sources */,
 				7AC9D4392366E0A500D46A0B /* XBMKMap.m in Sources */,
 				7AC9D42F2366E08B00D46A0B /* XGMSMapView.m in Sources */,
 				7AC9D4412366E21200D46A0B /* XGMSMarker.m in Sources */,
@@ -421,6 +467,7 @@
 				7AC9D4302366E08B00D46A0B /* XAMPMapView.m in Sources */,
 				7AF6D79E23698D8D0056FFF4 /* XYZAMPPolyline.m in Sources */,
 				7AC9D4552367C82900D46A0B /* XYZAMPMarkerView.m in Sources */,
+				7AF6D7A4236A6A890056FFF4 /* XBMKPanoramaView.m in Sources */,
 				7AC9D44F2366F0FF00D46A0B /* XYZBMKMarkerView.m in Sources */,
 				7AC9D45F23683C6600D46A0B /* XGMSPolyline.m in Sources */,
 				7AC9D3F72366882C00D46A0B /* ViewController.m in Sources */,
@@ -432,6 +479,7 @@
 				7AC9D43A2366E0A500D46A0B /* XAMPMap.m in Sources */,
 				7AC9D4312366E08B00D46A0B /* XBMKMapView.m in Sources */,
 				7AC9D4442366E24300D46A0B /* XAMPMarker.m in Sources */,
+				7AF6D7A7236A6AA90056FFF4 /* XGMSPanoramaView.m in Sources */,
 				7AC9D4022366883200D46A0B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -575,6 +623,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7E7TMCQKDR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MapLib4iOS/MapLib/PanoramaViewProtocol/Frameworks",
+				);
 				INFOPLIST_FILE = MapLib4iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -594,6 +646,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7E7TMCQKDR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MapLib4iOS/MapLib/PanoramaViewProtocol/Frameworks",
+				);
 				INFOPLIST_FILE = MapLib4iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

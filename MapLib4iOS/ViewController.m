@@ -12,6 +12,8 @@
 @interface ViewController ()
 @property(nonatomic, strong) id<XMapProtocol> mMapProtocol;
 @property(nonatomic, strong) id<XMapViewProtocol> mMapViewProtocol;
+@property(nonatomic, strong) id<XPanoramaViewProtocol> mPanoramaViewProtocol;
+
 @end
 
 @implementation ViewController
@@ -25,9 +27,13 @@ static const double kCameraLongitude = 113.924789;
   self.title = @"mapDemo";
   self.view.backgroundColor = [UIColor whiteColor];
 
-  [self.view addSubview:self.mMapViewProtocol.mapView];
-  [self addMarker];
-  [self addOverlay];
+  //  [self.view addSubview:self.mMapViewProtocol.mapView];
+  //  [self addMarker];
+  //  [self addOverlay];
+
+  [self.view addSubview:self.mPanoramaViewProtocol.panoramaView];
+  [self.mPanoramaViewProtocol
+      moveNearCoordinate:CLLocationCoordinate2DMake(kCameraLatitude, kCameraLongitude)];
 }
 
 - (void)addMarker {
@@ -74,6 +80,14 @@ static const double kCameraLongitude = 113.924789;
                ZoomLevel:15.0f];
   }
   return _mMapViewProtocol;
+}
+
+- (id<XPanoramaViewProtocol>)mPanoramaViewProtocol {
+  if (_mPanoramaViewProtocol == nil) {
+    _mPanoramaViewProtocol = [self.mMapProtocol panoramaViewWithFrame:self.view.bounds
+                                                                  Key:BMKMapKey];
+  }
+  return _mPanoramaViewProtocol;
 }
 
 @end

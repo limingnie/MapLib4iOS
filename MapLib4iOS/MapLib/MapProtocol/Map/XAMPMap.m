@@ -11,6 +11,7 @@
 
 #import "XAMPMapView.h"
 #import "XAMPMarker.h"
+#import "XAMPPanoramaView.h"
 #import "XAMPPolyline.h"
 
 @interface XAMPMap ()
@@ -34,7 +35,7 @@
 }
 
 - (nonnull id<XMarkerProtocol>)markerWithView:(nonnull UIView *)view
-								   Coordinate:(CLLocationCoordinate2D)coord
+                                   Coordinate:(CLLocationCoordinate2D)coord
                                      UserData:(nonnull NSDictionary *)userData {
   return [[XAMPMarker alloc] initMarkerViewWithView:view Coordinate:coord UserData:userData];
 }
@@ -47,6 +48,11 @@
                                                      Count:count
                                                StrokeColor:strokeColor
                                                StrokeWidth:strokeWidth];
+}
+
+- (nonnull id<XPanoramaViewProtocol>)panoramaViewWithFrame:(CGRect)frame
+                                                       Key:(nonnull NSString *)key {
+  return [[XAMPPanoramaView alloc] initPanoramaViewWithFrame:frame Key:key];
 }
 
 @end

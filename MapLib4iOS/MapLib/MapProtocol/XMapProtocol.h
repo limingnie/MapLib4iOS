@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "XMapViewProtocol.h"
 #import "XMarkerProtocol.h"
+#import "XPanoramaViewProtocol.h"
 #import "XPolylineProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -24,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param coord x description
 /// @param level level description
 - (id<XMapViewProtocol>)mapViewWithFrame:(CGRect)frame
-							  Coordinate:(CLLocationCoordinate2D)coord
+                              Coordinate:(CLLocationCoordinate2D)coord
                                ZoomLevel:(float)level;
 
 /// marker
@@ -32,7 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param coord x description
 /// @param userData userData description
 - (id<XMarkerProtocol>)markerWithView:(UIView *)view
-						   Coordinate:(CLLocationCoordinate2D)coord
+                           Coordinate:(CLLocationCoordinate2D)coord
                              UserData:(NSDictionary *)userData;
 
 /// polyline
@@ -42,8 +43,13 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param strokeWidth strokeWidth description
 - (id<XPolylineProtocol>)polylineWithCoordinates:(CLLocationCoordinate2D *)coords
                                            Count:(NSUInteger)count
-									 StrokeColor:(UIColor *)strokeColor
-									 StrokeWidth:(CGFloat)strokeWidth;
+                                     StrokeColor:(UIColor *)strokeColor
+                                     StrokeWidth:(CGFloat)strokeWidth;
+
+/// panoramaView
+/// @param frame frame description
+/// @param key key description
+- (id<XPanoramaViewProtocol>)panoramaViewWithFrame:(CGRect)frame Key:(NSString *)key;
 
 @end
 

@@ -11,6 +11,7 @@
 
 #import "XGMSMapView.h"
 #import "XGMSMarker.h"
+#import "XGMSPanoramaView.h"
 #import "XGMSPolyline.h"
 
 @interface XGMSMap ()
@@ -28,13 +29,13 @@
 }
 
 - (nonnull id<XMapViewProtocol>)mapViewWithFrame:(CGRect)frame
-									  Coordinate:(CLLocationCoordinate2D)coord
+                                      Coordinate:(CLLocationCoordinate2D)coord
                                        ZoomLevel:(float)level {
   return [[XGMSMapView alloc] initMapViewWithFrame:frame Coordinate:coord ZoomLevel:level];
 }
 
 - (nonnull id<XMarkerProtocol>)markerWithView:(nonnull UIView *)view
-								   Coordinate:(CLLocationCoordinate2D)coord
+                                   Coordinate:(CLLocationCoordinate2D)coord
                                      UserData:(nonnull NSDictionary *)userData {
   return [[XGMSMarker alloc] initMarkerViewWithView:view Coordinate:coord UserData:userData];
 }
@@ -47,6 +48,11 @@
                                                      Count:count
                                                StrokeColor:strokeColor
                                                StrokeWidth:strokeWidth];
+}
+
+- (nonnull id<XPanoramaViewProtocol>)panoramaViewWithFrame:(CGRect)frame
+                                                       Key:(nonnull NSString *)key {
+  return [[XGMSPanoramaView alloc] initPanoramaViewWithFrame:frame Key:key];
 }
 
 @end

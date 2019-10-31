@@ -11,6 +11,7 @@
 
 #import "XBMKMapView.h"
 #import "XBMKMarker.h"
+#import "XBMKPanoramaView.h"
 #import "XBMKPolyline.h"
 
 @interface XBMKMap () <BMKGeneralDelegate>
@@ -30,13 +31,13 @@
 }
 
 - (nonnull id<XMapViewProtocol>)mapViewWithFrame:(CGRect)frame
-									  Coordinate:(CLLocationCoordinate2D)coord
+                                      Coordinate:(CLLocationCoordinate2D)coord
                                        ZoomLevel:(float)level {
   return [[XBMKMapView alloc] initMapViewWithFrame:frame Coordinate:coord ZoomLevel:level];
 }
 
 - (nonnull id<XMarkerProtocol>)markerWithView:(nonnull UIView *)view
-								   Coordinate:(CLLocationCoordinate2D)coord
+                                   Coordinate:(CLLocationCoordinate2D)coord
                                      UserData:(nonnull NSDictionary *)userData {
   return [[XBMKMarker alloc] initMarkerViewWithView:view Coordinate:coord UserData:userData];
 }
@@ -49,6 +50,11 @@
                                                      Count:count
                                                StrokeColor:strokeColor
                                                StrokeWidth:strokeWidth];
+}
+
+- (nonnull id<XPanoramaViewProtocol>)panoramaViewWithFrame:(CGRect)frame
+                                                       Key:(nonnull NSString *)key {
+  return [[XBMKPanoramaView alloc] initPanoramaViewWithFrame:frame Key:key];
 }
 
 //联网

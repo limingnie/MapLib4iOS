@@ -20,9 +20,9 @@
   // Override point for customization after application launch.
 
   //百度地图
-  //	[[XMapLib shareInstance] initMapLibWithKey:BMKMapKey Type:XMapTypeBMK];
+  [[XMapLib shareInstance] initMapLibWithKey:BMKMapKey Type:XMapTypeBMK];
   //谷歌地图
-  [[XMapLib shareInstance] initMapLibWithKey:GMSMapKey Type:XMapTypeGMS];
+//  [[XMapLib shareInstance] initMapLibWithKey:GMSMapKey Type:XMapTypeGMS];
   //高德地图
   //	[[XMapLib shareInstance] initMapLibWithKey:AMPMapKey Type:XMapTypeAMP];
 
