@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)shareInstance;
 - (void)initMapLibWithKey:(NSString *)key Type:(XMapType)type;
 - (id<XMapProtocol>)mapProtocol;
+- (NSString *)mapKey;
 
 @end
 

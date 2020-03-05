@@ -9,6 +9,7 @@
 #import "XMapLib.h"
 
 @implementation XMapLib {
+  NSString *kMapKey;
   id<XMapProtocol> kMapProtocol;
 }
 
@@ -45,11 +46,16 @@ static XMapLib *instance = nil;
       classStr = @"XAMPMap";
       break;
   }
+  kMapKey = key;
   kMapProtocol = [[NSClassFromString(classStr) alloc] initMapWithKey:key];
 }
 
 - (id<XMapProtocol>)mapProtocol {
   return kMapProtocol;
+}
+
+- (NSString *)mapKey {
+	return kMapKey;
 }
 
 @end

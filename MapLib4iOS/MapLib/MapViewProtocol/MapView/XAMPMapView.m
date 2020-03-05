@@ -41,6 +41,10 @@
   [self.mMapView addAnnotation:(id<MAAnnotation>)marker];
 }
 
+- (void)addMarkers:(NSArray *)markers {
+  [self.mMapView addAnnotations:markers];
+}
+
 - (void)addOverlay:(nonnull id)polyline {
   [self.mMapView addOverlay:(id<MAOverlay>)polyline];
 }

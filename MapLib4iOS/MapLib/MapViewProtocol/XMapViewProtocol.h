@@ -27,6 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// addMarker
 /// @param marker marker description
 - (void)addMarker:(id)marker;
+- (void)addMarkers:(NSArray *)markers;
 
 /// addOverlay
 /// @param polyline polyline description

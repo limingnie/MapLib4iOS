@@ -36,6 +36,12 @@
   m.map = self.mMapView;
 }
 
+- (void)addMarkers:(NSArray *)markers {
+	for (GMSMarker *m in markers) {
+		m.map = self.mMapView;
+	}
+}
+
 - (void)addOverlay:(nonnull id)polyline {
 	GMSPolyline *p = polyline;
 	p.map = self.mMapView;
