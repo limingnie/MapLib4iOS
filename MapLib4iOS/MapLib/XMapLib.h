@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)shareInstance;
 - (void)initMapLibWithKey:(NSString *)key Type:(XMapType)type;
 - (id<XMapProtocol>)mapProtocol;
-- (NSString *)mapKey;
+- (NSString *)mapKey;//一般只配置一次key，但有些功能(比如街景)如果还需要配置
 
 @end
 

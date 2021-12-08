@@ -11,6 +11,7 @@
 
 @interface BMKClusterManager : NSObject
 @property (nonatomic, strong) NSMutableArray *clusterCaches;
+- (void)addClusterItem:(BMKQuadItem *)item;
 - (void)clearClusterItems;
 - (NSArray*)getClusters:(CGFloat)zoomLevel;
 @end

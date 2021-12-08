@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		374C66F5CA1AD481B05D8C63 /* libPods-MapLib4iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4881146650C2E9F1EBB14AE2 /* libPods-MapLib4iOS.a */; };
+		7A0690B82410A52200592428 /* ClusterAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0690B72410A52200592428 /* ClusterAnnotation.m */; };
 		7A8D42EA240FB18D00190BB1 /* BMKClusterQuadtree.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8D42E3240FB18D00190BB1 /* BMKClusterQuadtree.m */; };
 		7A8D42EB240FB18D00190BB1 /* BMKCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8D42E4240FB18D00190BB1 /* BMKCluster.m */; };
 		7A8D42EC240FB18D00190BB1 /* BMKClusterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8D42E6240FB18D00190BB1 /* BMKClusterManager.m */; };
@@ -44,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		4881146650C2E9F1EBB14AE2 /* libPods-MapLib4iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapLib4iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A0690B62410A52200592428 /* ClusterAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClusterAnnotation.h; sourceTree = "<group>"; };
+		7A0690B72410A52200592428 /* ClusterAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClusterAnnotation.m; sourceTree = "<group>"; };
 		7A8D42E2240FB18D00190BB1 /* BMKClusterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKClusterManager.h; sourceTree = "<group>"; };
 		7A8D42E3240FB18D00190BB1 /* BMKClusterQuadtree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKClusterQuadtree.m; sourceTree = "<group>"; };
 		7A8D42E4240FB18D00190BB1 /* BMKCluster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKCluster.m; sourceTree = "<group>"; };
@@ -153,6 +156,8 @@
 				7A8D42E3240FB18D00190BB1 /* BMKClusterQuadtree.m */,
 				7A8D42E7240FB18D00190BB1 /* BMKCluster.h */,
 				7A8D42E4240FB18D00190BB1 /* BMKCluster.m */,
+				7A0690B62410A52200592428 /* ClusterAnnotation.h */,
+				7A0690B72410A52200592428 /* ClusterAnnotation.m */,
 			);
 			path = BMKCluster;
 			sourceTree = "<group>";
@@ -490,6 +495,7 @@
 				7AF6D79B23698BB60056FFF4 /* XYZBMKPolyline.m in Sources */,
 				7A8D42EC240FB18D00190BB1 /* BMKClusterManager.m in Sources */,
 				7AC9D43E2366E1D900D46A0B /* XBMKMarker.m in Sources */,
+				7A0690B82410A52200592428 /* ClusterAnnotation.m in Sources */,
 				7AF6D7AA236A6AC10056FFF4 /* XAMPPanoramaView.m in Sources */,
 				7AC9D4392366E0A500D46A0B /* XBMKMap.m in Sources */,
 				7AC9D42F2366E08B00D46A0B /* XGMSMapView.m in Sources */,
